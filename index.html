@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html>
-    <head> 
-        <title>패턴4</title> 
-        <meta name="viewport" content="user-scalable=no,initial
-        scale=1,maximum-scale=1"> 
-        <style> 
-        * { 
-            margin: 0; 
-            padding: 0;
-        } 
-        body { 
-            width: 960px; 
-            margin: 0 auto; 
-            overflow: hidden; 
-        } 
-        #menu { 
-            width: 260px; 
-            float: right; 
-        } 
-        #section { 
-            width: 700px; 
-            float: left; 
-        } 
-        li { list-style: none; } 
-        @media screen and (max-width: 767px) { 
-            /* 스마트폰사이즈에서는전부해제합니다. */ 
-            body { width: auto } 
-            #menu { width: auto; float: none; } 
-            #section { width: auto; float: none; } 
-        } 
-        </style>
-    </head>
-    <body> 
-        <div id="section"> 
-            <h1>여름</h1> 
-            <p>날이 뜨거워지면 여름이 왔다는 뜻이다.</p>
-            <p>여름은 많은 것들을 즐길 수 있다.</p>
-            <p>부서지는 파도, 짭짤한 공기, 뜨거운 공기.</p>
-            <p>여름은 많은 것들을 즐길 수 있다.</p>
-            <p>시원한 계곡, 아이들 웃음소리, 달달한 수박</p>
-            <p>여름은 많은 것들을 즐길 수 있다.</p>
-            <p>잠이 오는 마룻바닥, 선선한 바람, 선풍기 소리</p>
-            <p>여름은 많은 것들을 즐길 수 있다.</p>
-            <p>차가운 냉면, 고소한 콩국수, 금방 녹아내리는 아이스크림.</p>
-            <p>여름은 즐길 수 있는 순간들이 많다.</p>
-        </div> 
-        <div id="menu"> 
-            <ul>
-                <li>메뉴A</li> 
-                <li>메뉴B</li> 
-                <li>메뉴C</li> 
-            </ul>
-        </div>
-    </body> 
-    </html>
+<head> 
+    <title>패턴4</title> 
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1"> 
+    <style> 
+    * { 
+        margin: 0; 
+        padding: 0;
+    } 
+    body { 
+        width: 960px; 
+        margin: 0 auto; 
+        overflow: hidden; 
+    } 
+    #menu { 
+        width: 260px; 
+        float: right; 
+    } 
+    #section { 
+        width: 700px; 
+        float: left;
+        text-align: center; 
+    } 
+    #section h1 {
+        margin-bottom: 20px;
+    }
+    li { list-style: none; } 
+    @media screen and (max-width: 767px) { 
+        body { width: auto } 
+        #menu { width: auto; float: none; } 
+        #section { width: auto; float: none; text-align: center; } 
+    } 
+    </style>
+</head>
+<body> 
+    <div id="section"> 
+        <h1>여름</h1> 
+        <p>날이 뜨거워지면 여름이 왔다는 뜻이다.</p>
+        <p>여름은 많은 것들을 즐길 수 있다.</p>
+        <p>부서지는 파도, 짭짤한 공기, 뜨거운 공기.</p>
+        <p>여름은 많은 것들을 즐길 수 있다.</p>
+        <p>시원한 계곡, 아이들 웃음소리, 달달한 수박</p>
+        <p>여름은 많은 것들을 즐길 수 있다.</p>
+        <p>잠이 오는 마룻바닥, 선선한 바람, 선풍기 소리</p>
+        <p>여름은 많은 것들을 즐길 수 있다.</p>
+        <p>차가운 냉면, 고소한 콩국수, 금방 녹아내리는 아이스크림.</p>
+        <p>여름은 즐길 수 있는 순간들이 많다.</p>
+    </div> 
+    <div id="menu"> 
+        <ul>
+            <li>메뉴A</li> 
+            <li>메뉴B</li> 
+            <li>메뉴C</li> 
+        </ul>
+    </div>
+</body> 
+</html>
+
