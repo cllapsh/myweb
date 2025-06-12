@@ -2,16 +2,19 @@
 <html>
 <head> 
     <title>패턴4</title> 
-    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> 
     <style> 
     * { 
         margin: 0; 
         padding: 0;
+        box-sizing: border-box;
     } 
     body { 
-        width: 960px; 
+        max-width: 960px; 
         margin: 0 auto; 
-        overflow: hidden; 
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        background-color: #ffffff; 
     } 
     #menu { 
         width: 260px; 
@@ -21,15 +24,36 @@
         width: 700px; 
         float: left;
         text-align: center; 
+        background-color: #E0F7FA; 
+        padding: 20px;
+        border-radius: 10px; 
     } 
     #section h1 {
-        margin-bottom: 20px;
+        margin-bottom: 20px; 
+        font-size: 2em;
     }
-    li { list-style: none; } 
+    #section p {
+        margin-bottom: 10px;
+        font-size: 1.1em;
+        line-height: 1.5em;
+    }
+    li { 
+        list-style: none; 
+        margin-bottom: 10px;
+        font-size: 1.1em;
+    } 
     @media screen and (max-width: 767px) { 
-        body { width: auto } 
-        #menu { width: auto; float: none; } 
-        #section { width: auto; float: none; text-align: center; } 
+        body { 
+            width: 100%; 
+            padding: 15px;
+        } 
+        #menu, #section { 
+            width: 100%; 
+            float: none; 
+        } 
+        #section { 
+            text-align: center;
+        }
     } 
     </style>
 </head>
@@ -56,4 +80,3 @@
     </div>
 </body> 
 </html>
-
